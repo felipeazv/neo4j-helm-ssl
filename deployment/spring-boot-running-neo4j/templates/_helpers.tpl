@@ -36,8 +36,8 @@ Create neo4j connection
 */}}
 {{- define "spring-boot-running-neo4j-connection.url" -}}
 {{- if .Values.ssl.enabled  -}}
-{{- print "bolt+s://spring-boot-running-neo4j:7687"  -}}
+{{- print "bolt+s://neo4j:7687"  -}}
 {{- else -}}
-{{- print "bolt://spring-boot-running-neo4j:7687"  -}}
+{{- print "bolt://neo4j:7687"  -}}
 {{- end -}}
 {{- end -}}

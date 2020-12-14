@@ -14,12 +14,12 @@ spec:
   issuerRef:
     name: ca
     kind: ClusterIssuer
-  commonName: spring-boot-running-neo4j
+  commonName: neo4j
   dnsNames:
-    - spring-boot-running-neo4j
-    - spring-boot-running-neo4j.{{ .Release.Namespace }}
-    - spring-boot-running-neo4j.{{ .Release.Namespace }}.svc.cluster.local
-    - spring-boot-running-neo4j-headless
-    - spring-boot-running-neo4j-headless.{{ .Release.Namespace }}
-    - spring-boot-running-neo4j-headless.{{ .Release.Namespace }}.svc.cluster.local
+    - neo4j
+    - neo4j.{{ .Release.Namespace }}
+    - neo4j.{{ .Release.Namespace }}.svc.cluster.local
+    - neo4j-headless
+    - neo4j-headless.{{ .Release.Namespace }}
+    - neo4j-headless.{{ .Release.Namespace }}.svc.cluster.local
   {{- end }}
