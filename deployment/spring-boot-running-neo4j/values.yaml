@@ -22,7 +22,7 @@ neo4j:
     # Init containers to run before the Neo4j core pod.
     initContainers:
       - name: manage-certificates
-        image: "frapsoft/openssl"
+        image: "busybox"
         imagePullPolicy: "IfNotPresent"
         volumeMounts:
           - name: ca
